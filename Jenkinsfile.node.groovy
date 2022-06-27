@@ -1,9 +1,9 @@
 pipeline {
-    agent { label 'Jenkin-slave' }
+    agent any
     stages {
         stage('build') {
             steps {
-                sh 'node --version'
+                echo "Hello World!"
             }
         }
     }
