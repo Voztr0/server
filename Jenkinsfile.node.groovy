@@ -1,4 +1,4 @@
-node('agent01') {
+node('Jenkins-slave') {
     stage('Source') {
         git 'https://github.com/Voztr0/server.git'
     }
