@@ -11,15 +11,5 @@ pipeline {
                     git 'https://github.com/Voztr0/server.git'
                 }    
             }
-            stage('Build') {
-                steps {
-                    sh 'npm install'
-                }
-            }
-            stage('run') {
-                steps {
-                    sh 'node src/index.js'
-                }    
-            }
         }
 }
