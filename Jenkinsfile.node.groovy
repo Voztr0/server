@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Source') {
             steps {
-                git 'https://github.com/Voztr0/server.git'
+                echo 'Hello World'
             }
         }
         stage('Build') {
