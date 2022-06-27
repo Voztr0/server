@@ -11,10 +11,10 @@ pipeline {
                     git 'https://github.com/Voztr0/server.git'
                 }    
             }
-            stage('Dependencies') {
+            stage('Build') {
                 steps {
                     sh 'npm install'
-                }    
+                }
             }
             stage('run') {
                 steps {
