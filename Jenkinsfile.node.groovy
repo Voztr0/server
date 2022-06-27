@@ -11,7 +11,7 @@ pipeline {
                     git 'https://github.com/Voztr0/server.git'
                 }    
             }
-            stage('install') {
+            stage('Dependencies') {
                 steps {
                     sh 'npm install'
                 }    
