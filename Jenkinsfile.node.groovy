@@ -1,15 +1,30 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
-            steps {
-                echo "Hello World!"
-            }
-        }
         stage('Source') {
             steps {
-                git 'https://github.com/Voztr0/server.git'
-            }    
+                echo 'get sources'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'run build'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'run deploy'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'run test'
+            }
+        }
+        stage('Feedback') {
+            steps {
+                echo 'send reports'
+            }
         }
     }
 }
