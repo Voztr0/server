@@ -1,5 +1,5 @@
 pipeline {
-    agent { jenkin-slave }
+    agent { Jenkin-slave }
     stages {
         stage('build') {
             steps {
