@@ -11,7 +11,7 @@ pipeline {
                 git 'https://github.com/Voztr0/server.git'
             }    
         }
-        stage('ObtainRepo') {
+        stage('Source') {
             steps {
                 git 'https://github.com/Voztr0/server.git'
             }    
